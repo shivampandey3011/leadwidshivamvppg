@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Vote Shivam Pandey for VP Postgraduate | Westminster Student Union Elections 2025',
   description: 'Vote for Shivam Pandey for VP Postgraduate in the University of Westminster Student Union Elections 2025. A strong voice for postgraduates, leadership, and student rights. Get involved now!',
   generator: 'v0.dev',
-  keywords: 'Westminster Student Union, University of Westminster, Student Elections 2025, VP Postgraduate, Vote for Shivam Pandey, Westminster postgraduate elections, student leadership, Westminster voting, student support, university politics, Shivam Pandey manifesto',
+  keywords: 'Westminster Student Union, University of Westminster, Student Elections 2025, VP Postgraduate, Vote for Shivam Pandey, Westminster postgraduate elections, student leadership, Westminster voting, student support, university politics, lead with shivam, Shivam Pandey manifesto',
   authors: [{ name: 'Shivam Pandey', url: 'https://shivam4westminstervppg.co.uk' }],
   openGraph: {
     title: 'Vote Shivam Pandey for VP Postgraduate | Westminster Student Union Elections 2025',
