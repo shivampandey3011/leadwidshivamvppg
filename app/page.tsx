@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -137,98 +138,79 @@ export default function Home() {
           </div>
 
           <div className="space-y-8">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="md:w-1/3">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Feedback System"
-                  width={400}
-                  height={300}
-                  className="rounded-lg shadow-md"
-                />
-              </div>
-              <div className="md:w-2/3 space-y-4">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <h3 className="text-2xl font-semibold">A Stronger, More Engaging Feedback System</h3>
+            <Card className="bg-background hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-full bg-primary/10 h-fit">
+                    <CheckCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">A Stronger, More Engaging Feedback System</h3>
+                    <p className="text-muted-foreground">
+                      I believe in actionable feedback that drives real change! I will introduce incentives for Course
+                      Representatives to encourage structured feedback collection. A bi-weekly reporting system will
+                      ensure student concerns are consistently addressed. I will also enhance UnitU, making it an
+                      interactive hub where students can track feedback progress, engage in discussions, and see
+                      real-time updates!
+                    </p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground">
-                  I believe in actionable feedback that drives real change! I will introduce incentives for Course
-                  Representatives to encourage structured feedback collection. A bi-weekly reporting system will ensure
-                  student concerns are consistently addressed. I will also enhance UnitU, making it an interactive hub
-                  where students can track feedback progress, engage in discussions, and see real-time updates!
-                </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
-            <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
-              <div className="md:w-1/3">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Canteen Hours"
-                  width={400}
-                  height={300}
-                  className="rounded-lg shadow-md"
-                />
-              </div>
-              <div className="md:w-2/3 space-y-4">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <h3 className="text-2xl font-semibold">Extended Canteen Hours & Diverse Food Options</h3>
+            <Card className="bg-background hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-full bg-primary/10 h-fit">
+                    <CheckCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Extended Canteen Hours & Diverse Food Options</h3>
+                    <p className="text-muted-foreground">
+                      No student should have to choose between attending a lecture and getting a meal! I will advocate
+                      for extended canteen hours and a diverse menu that caters to all dietary needs—vegetarian, vegan,
+                      halal—ensuring nutritious, affordable food is always available.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground">
-                  No student should have to choose between attending a lecture and getting a meal! I will advocate for
-                  extended canteen hours and a diverse menu that caters to all dietary needs—vegetarian, vegan,
-                  halal—ensuring nutritious, affordable food is always available.
-                </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="md:w-1/3">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Postgraduate Networking"
-                  width={400}
-                  height={300}
-                  className="rounded-lg shadow-md"
-                />
-              </div>
-              <div className="md:w-2/3 space-y-4">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <h3 className="text-2xl font-semibold">A Social Hub for Postgraduate Networking</h3>
+            <Card className="bg-background hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-full bg-primary/10 h-fit">
+                    <CheckCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">A Social Hub for Postgraduate Networking</h3>
+                    <p className="text-muted-foreground">
+                      Postgraduate students juggle academics and careers, yet networking opportunities are limited. I
+                      will create a dedicated social space for collaboration, mentorship, and cultural exchange through
+                      regular events and meetups, helping students build lasting connections.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground">
-                  Postgraduate students juggle academics and careers, yet networking opportunities are limited. I will
-                  create a dedicated social space for collaboration, mentorship, and cultural exchange through regular
-                  events and meetups, helping students build lasting connections.
-                </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
-            <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
-              <div className="md:w-1/3">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Student Guide"
-                  width={400}
-                  height={300}
-                  className="rounded-lg shadow-md"
-                />
-              </div>
-              <div className="md:w-2/3 space-y-4">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <h3 className="text-2xl font-semibold">Free Oyster Cards & A Smarter Student Guide</h3>
+            <Card className="bg-background hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-full bg-primary/10 h-fit">
+                    <CheckCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Free Oyster Cards & A Smarter Student Guide</h3>
+                    <p className="text-muted-foreground">
+                      London's high living costs add stress. I will advocate for free Oyster cards and introduce a
+                      digital and physical student guide covering university systems, research tools, student benefits,
+                      and city navigation—ensuring every student thrives!
+                    </p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground">
-                  London's high living costs add stress. I will advocate for free Oyster cards and introduce a digital
-                  and physical student guide covering university systems, research tools, student benefits, and city
-                  navigation—ensuring every student thrives!
-                </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -246,8 +228,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="bg-background hover:shadow-lg transition-shadow">
+          {/* Why Me Section - Updated Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* NGO Leadership Card */}
+            <Card className="bg-background hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-72">
+                <Image
+                  src="/Images/WhatsApp Image 2025-03-19 at 21.12.44_7a45d62c.jpg"
+                  alt="NGO Leadership"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
                 <div className="flex gap-4">
                   <div className="p-3 rounded-full bg-primary/10 h-fit">
@@ -264,7 +256,16 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="bg-background hover:shadow-lg transition-shadow">
+            {/* Fit Thane, Clean Thane Card */}
+            <Card className="bg-background hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-72">
+                <Image
+                  src="/Images/WhatsApp Image 2025-03-20 at 12.36.37_e9dba59c.jpg"
+                  alt="Fit Thane, Clean Thane"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
                 <div className="flex gap-4">
                   <div className="p-3 rounded-full bg-primary/10 h-fit">
@@ -280,7 +281,16 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="bg-background hover:shadow-lg transition-shadow">
+            {/* Academic Engagement Card */}
+            <Card className="bg-background hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-72">
+                <Image
+                  src="/Images/WhatsApp Image 2025-03-19 at 21.12.44_9c5f9fab.jpg"
+                  alt="Academic Engagement"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
                 <div className="flex gap-4">
                   <div className="p-3 rounded-full bg-primary/10 h-fit">
@@ -297,16 +307,50 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="bg-background hover:shadow-lg transition-shadow">
+            {/* University Cricket Card */}
+            <Card className="bg-background hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-72">
+                <Image
+                  src="/Images/cricket.jpg" // Replace with your cricket image path
+                  alt="University Cricket"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
                 <div className="flex gap-4">
                   <div className="p-3 rounded-full bg-primary/10 h-fit">
                     <Award className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">University Involvement</h3>
+                    <h3 className="text-xl font-semibold mb-2">University Cricket</h3>
                     <p className="text-muted-foreground">
-                      Active as a university cricketer and fundraiser, showing my dedication to community building.
+                      Active member of the university cricket team, promoting sports culture and team spirit on campus.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Fundraising Initiatives Card */}
+            <Card className="bg-background hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="relative h-72">
+                <Image
+                  src="/Images/fundraising-image.jpg" // Replace with your fundraising image path
+                  alt="Fundraising Initiatives"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardContent className="pt-6">
+                <div className="flex gap-4">
+                  <div className="p-3 rounded-full bg-primary/10 h-fit">
+                    <Users className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Fundraising Initiatives</h3>
+                    <p className="text-muted-foreground">
+                      Successfully organized multiple fundraising events supporting student scholarships and campus improvements.
                     </p>
                   </div>
                 </div>
