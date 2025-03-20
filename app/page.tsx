@@ -43,7 +43,11 @@ export default function Home() {
               Your voice for a better educational experience at Westminster
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open('https://instagram.com/leadwidshivam_vppg', '_blank')}
+              >
                 Support My Campaign
               </Button>
               <Button size="lg" variant="outline">
