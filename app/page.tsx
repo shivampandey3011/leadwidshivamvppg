@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container flex h-16 items-center">
           <div className="mr-4 hidden md:flex">
             <span className="text-xl font-bold">Shivam Pandey</span>
-            <Badge className="ml-2 bg-primary">For Education Officer</Badge>
+            <Badge className="ml-2 bg-primary">For Vice-President of Postgraduate</Badge>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
             <nav className="flex items-center space-x-6">
@@ -535,7 +535,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <span className="text-xl font-bold">Shivam Pandey</span>
-              <Badge className="ml-2">For Education Officer</Badge>
+              <Badge className="ml-2">For Vice-President of Postgraduate</Badge>
             </div>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
