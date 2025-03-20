@@ -50,7 +50,11 @@ export default function Home() {
               >
                 Support My Campaign
               </Button>
-              <Button size="lg" variant="outline">
+              <Button 
+                size="lg" 
+                variant="outline"
+                onClick={() => window.open('https://uwsu.com/voice/elections', '_blank')}
+              >
                 Learn More
               </Button>
             </div>
@@ -451,6 +455,17 @@ export default function Home() {
                     <div className="flex items-center gap-3">
                       <Award className="h-5 w-5 text-primary" />
                       <p><span className="font-medium">Results Night:</span> April 8th</p>
+                    </div>
+                    
+                    {/* Increased Image Size */}
+                    <div className="relative h-[32rem] mt-6 rounded-lg overflow-hidden shadow-lg">
+                      <Image
+                        src="/Images/students-voting.jpg"
+                        alt="Students participating in university elections"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
                     </div>
                   </div>
                 </div>
