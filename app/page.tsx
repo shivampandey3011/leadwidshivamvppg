@@ -16,8 +16,8 @@ export default function Home() {
             <div className="bg-yellow-100 p-4 rounded-lg border border-yellow-300">
               <div className="font-semibold text-lg mb-2">Important Notice:</div>
               <p className="text-sm">
-                Due to some technical difficulties on our website that affected the Vice President of 
-                Undergraduate Education and Vice President of Postgraduate Education elections, we have 
+                Due to some technical difficulties on the SU website that affected the Vice President of 
+                Undergraduate Education and Vice President of Postgraduate Education elections, The SU have 
                 made a decision to extend the deadline for those roles to Friday 4th April at 3pm.
               </p>
             </div>
