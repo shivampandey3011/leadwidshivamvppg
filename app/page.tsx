@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Award, BookOpen, Users, MapPin, Clock } from "lucide-react"
+import { QRCodeSVG } from 'qrcode.react';
 
 export default function Home() {
   return (
@@ -26,7 +27,12 @@ export default function Home() {
               <a href="#why-me" className="text-sm font-medium transition-colors hover:text-primary">
                 Why Me
               </a>
-              <Button className="bg-primary hover:bg-primary/90">Vote Now</Button>
+              <Button 
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open('https://uwsu.com/elections/list', '_blank')}
+              >
+                Vote Now
+              </Button>
             </nav>
           </div>
         </div>
@@ -548,6 +554,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* QR Code Section */}
+      <section className="py-16 bg-muted/50">
+        <div className="container">
+          <div className="flex flex-col items-center text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Quick Access to Voting</h3>
+            <p className="text-muted-foreground mb-8">
+              Scan this QR code to access the voting page directly
+            </p>
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <QRCodeSVG
+                value="https://uwsu.com/elections/list"
+                size={200}
+                bgColor={"#ffffff"}
+                fgColor={"#000000"}
+                level={"L"}
+                includeMargin={false}
+              />
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Visit: <a 
+                href="https://uwsu.com/elections/list" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                uwsu.com/elections/list
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
@@ -557,13 +595,18 @@ export default function Home() {
             students.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary">
+            <Button 
+              size="lg" 
+              variant="secondary"
+              onClick={() => window.open('https://instagram.com/leadwidshivam_vppg', '_blank')}
+            >
               Join the Campaign
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              onClick={() => window.open('https://uwsu.com/elections/list', '_blank')}
             >
               Vote Now
             </Button>
