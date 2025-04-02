@@ -9,6 +9,33 @@ import { QRCodeSVG } from 'qrcode.react';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Important Notice Banner */}
+      <div className="bg-yellow-50 border-b border-yellow-200">
+        <div className="container py-3">
+          <div className="flex flex-col gap-3 text-yellow-800">
+            <div className="bg-yellow-100 p-4 rounded-lg border border-yellow-300">
+              <div className="font-semibold text-lg mb-2">Important Notice:</div>
+              <p className="text-sm">
+                Due to some technical difficulties on our website that affected the Vice President of 
+                Undergraduate Education and Vice President of Postgraduate Education elections, we have 
+                made a decision to extend the deadline for those roles to Friday 4th April at 3pm.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 text-sm">
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4" />
+                <span className="font-medium">General Elections:</span> Closes Thursday 3rd April at 3pm
+              </div>
+              <div className="hidden sm:block text-yellow-600">|</div>
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4" />
+                <span className="font-medium">Postgraduate Role:</span> Extended until Friday 4th April at 3pm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center">
@@ -460,11 +487,15 @@ export default function Home() {
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <Clock className="h-5 w-5 text-primary" />
-                      <p><span className="font-medium">Voting Period:</span> April 1st (10am) - April 3rd (3pm)</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Award className="h-5 w-5 text-primary" />
-                      <p><span className="font-medium">Results Night:</span> April 8th</p>
+                      <div>
+                        <p><span className="font-medium">General Voting Period:</span> April 1st (10am) - April 3rd (3pm)</p>
+                        <p className="mt-2">
+                          <span className="font-medium">Postgraduate Role Extended Period:</span> April 1st (10am) - April 4th (3pm)
+                          <span className="text-sm text-muted-foreground block mt-1">
+                            *Extended deadline applies only to Vice President of Postgraduate Education role
+                          </span>
+                        </p>
+                      </div>
                     </div>
                     
                     {/* Increased Image Size */}
