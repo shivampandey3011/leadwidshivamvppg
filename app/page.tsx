@@ -378,7 +378,11 @@ export default function Home() {
               their needs, and taking real steps to improve their experiences. My proactive mindset, coupled with my
               background in education and passion for student welfare, makes me well-equipped for this role.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => window.open('https://uwsu.com/elections/list', '_blank')}
+            >
               Vote for Shivam
             </Button>
           </div>
